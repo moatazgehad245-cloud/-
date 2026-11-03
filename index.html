@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#d9b777">
+  <meta name="description" content="الفارس العربي — ستائر ومفروشات بتفاصيل أصيلة وجودة مصرية.">
+  <title>الفارس العربي | أصالة تُنسج بفخامة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="loader" id="loader"><div class="loader-mark">الفارس العربي</div><span>تُنسج الحكاية...</span><div class="loader-line"><i></i></div></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="الفارس العربي">
+      <span class="brand-symbol">𓃗</span><span><b>الفارس العربي</b><small>AL FARIS AL ARABI</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">☰</button>
+    <nav id="mainNav">
+      <a href="#story">حكايتنا</a><a href="#collections">المجموعات</a><a href="#craft">صناعة التفاصيل</a><a href="#measure">صمّم ستارتك</a>
+    </nav>
+    <a class="header-cta" href="#contact">اطلب عرض سعر <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grain"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> من روح الصحراء... إلى تفاصيل منزلك</p>
+        <h1>الفخامة<br><em>لها</em> أصالة.</h1>
+        <p class="hero-description">ستائر تُفصّل بعناية، وتفاصيل تُصنع لتبقى. نأخذ إلهامنا من جمال الخيل العربي وروح الرمال، لنمنح كل مساحة حكايتها الخاصة.</p>
+        <div class="hero-actions"><a class="btn btn-dark" href="#collections">اكتشف مجموعتنا <span>←</span></a><a class="text-link" href="#story">اكتشف حكايتنا <span>↙</span></a></div>
+        <div class="hero-note"><span class="note-line"></span><span>صناعة مصرية<br><b>بروح عربية أصيلة</b></span></div>
+      </div>
+      <div class="hero-visual" aria-label="حصان عربي ثلاثي الأبعاد">
+        <div class="sun-disc"></div><div class="dune dune-back"></div><div class="dune dune-front"></div>
+        <canvas id="horseCanvas"></canvas>
+        <div class="horse-caption"><span>01 / 04</span><b>قوة. رشاقة. أصالة.</b></div>
+        <div class="vertical-word">AL FARIS — EST. WITH HERITAGE</div>
+      </div>
+      <a class="scroll-cue" href="#story"><span></span> مرّر لاكتشاف الحكاية</a>
+    </section>
+
+    <section class="intro section-pad" id="story">
+      <div class="section-kicker">01 — الحكاية</div>
+      <div class="intro-grid">
+        <div><p class="eyebrow dark-eye">أصالة تتجاوز الزمن</p><h2>ليست مجرد ستارة.<br><em>إنها روح المكان.</em></h2></div>
+        <div class="intro-text"><p>نؤمن أن جمال المنزل يبدأ من التفاصيل التي تصنع إحساسه. من اختيار النسيج، إلى دقة التفصيل، وحتى آخر لمسة؛ نعتني بكل خطوة لنقدم ستائر تجمع بين الذوق الرفيع والحضور الهادئ.</p><a class="under-link" href="#craft">تعرف على أسلوبنا <span>←</span></a></div>
+      </div>
+      <div class="heritage-strip"><span>حِرفة</span><i>✦</i><span>جودة</span><i>✦</i><span>تفاصيل</span><i>✦</i><span>أصالة</span><i>✦</i><span>فخامة</span></div>
+    </section>
+
+    <section class="collections section-pad" id="collections">
+      <div class="section-heading"><div><div class="section-kicker">02 — مختاراتنا</div><h2>مساحات من <em>الجمال.</em></h2></div><p>لكل نافذة شخصية، ولكل مساحة اختيار يليق بها.</p></div>
+      <div class="collection-grid">
+        <article class="collection-card card-large"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=85" alt="ستائر في غرفة معيشة أنيقة"><div class="card-shade"></div><div class="collection-info"><span>01 / THE SIGNATURE</span><h3>توقيع الفارس</h3><p>طبقات راقية وتوازن بين الضوء والخصوصية.</p><a href="#measure">اكتشف المجموعة ↗</a></div></article>
+        <article class="collection-card"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=85" alt="تصميم داخلي بألوان ترابية"><div class="card-shade"></div><div class="collection-info"><span>02 / THE CALM</span><h3>هدوء الرمال</h3><p>ألوان طبيعية وملمس ناعم.</p><a href="#measure">اكتشف المجموعة ↗</a></div></article>
+        <article class="collection-card"><img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?auto=format&fit=crop&w=900&q=85" alt="ديكور فاخر وستائر"><div class="card-shade"></div><div class="collection-info"><span>03 / THE MAJESTIC</span><h3>المجلس الملكي</h3><p>حضور فخم للتفاصيل الكبيرة.</p><a href="#measure">اكتشف المجموعة ↗</a></div></article>
+      </div>
+    </section>
+
+    <section class="manifesto">
+      <div class="manifesto-image"><img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1800&q=90" alt="كثبان رملية ذهبية"></div>
+      <div class="manifesto-overlay"></div>
+      <div class="manifesto-content"><span class="section-kicker">03 — فلسفتنا</span><h2>من سكون الرمال<br>نستلهم <em>الحركة.</em></h2><p>نستلهم من الخيل العربي توازنه وقوته، ومن الصحراء دفء ألوانها واتساعها. فلسفة تنعكس في اختياراتنا، وفي كل تفصيلة نصنعها.</p><a class="btn btn-light" href="#craft">رحلة التفاصيل <span>←</span></a></div>
+      <div class="manifesto-number">A / 03</div>
+    </section>
+
+    <section class="craft section-pad" id="craft">
+      <div class="section-kicker">04 — صناعة التفاصيل</div>
+      <div class="craft-grid">
+        <div class="craft-title"><h2>الجمال يبدأ<br>من <em>الحِرفة.</em></h2><p>من أول اختيار للقماش، حتى اكتمال القطعة؛ كل مرحلة لها اهتمامها.</p></div>
+        <div class="craft-steps">
+          <div class="craft-step"><span>01</span><div><h3>اختيار الخامة</h3><p>نساعدك على اختيار النسيج واللون المناسبين لطبيعة المكان واحتياجك.</p></div><b>✦</b></div>
+          <div class="craft-step"><span>02</span><div><h3>دقة التفصيل</h3><p>قصّ وخياطة وتشطيب بعناية، مع مراجعة المقاسات والتفاصيل قبل التجهيز.</p></div><b>✦</b></div>
+          <div class="craft-step"><span>03</span><div><h3>تغليف آمن</h3><p>تجهيز يحافظ على القماش أثناء النقل، مع توثيق المنتج قبل الإرسال.</p></div><b>✦</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="measure-section" id="measure">
+      <div class="measure-bg"></div><div class="measure-inner">
+        <div><div class="section-kicker">05 — ابدأ من نافذتك</div><h2>مساحتك تستحق<br><em>تفصيلاً خاصاً.</em></h2><p>أرسل مقاسات النوافذ واختياراتك، وسنراجع التفاصيل ونجهز لك عرض سعر مبدئي.</p><div class="measure-points"><span>✓ تفصيل حسب الطلب</span><span>✓ خيارات خامات متعددة</span><span>✓ شحن دولي حسب الوجهة</span></div></div>
+        <form class="quote-form" id="quoteForm">
+          <h3>اطلب عرض سعر</h3><p>املأ البيانات وسنتواصل معك لتأكيد التفاصيل.</p>
+          <label>الاسم<input name="name" required placeholder="اسمك بالكامل"></label>
+          <label>رقم واتساب مع مفتاح الدولة<input name="phone" required placeholder="+966 5X XXX XXXX" dir="ltr"></label>
+          <div class="form-row"><label>عرض النافذة (سم)<input name="width" type="number" min="1" required placeholder="مثال: 200"></label><label>ارتفاع النافذة (سم)<input name="height" type="number" min="1" required placeholder="مثال: 250"></label></div>
+          <label>نوع الستارة<select name="type"><option>دبل (شيفون + بلاك أوت)</option><option>بلاك أوت</option><option>شيفون</option><option>حسب الاستشارة</option></select></label>
+          <label>المدينة<input name="city" placeholder="الرياض، جدة، الدمام..."></label>
+          <button class="btn btn-dark submit-btn" type="submit">إرسال طلب عرض السعر <span>←</span></button>
+          <small>إرسال الطلب لا يعني تأكيد السعر أو بدء التصنيع. تتم مراجعة المقاسات أولاً.</small>
+        </form>
+      </div>
+    </section>
+
+    <section class="promise section-pad">
+      <div class="section-kicker">06 — وعد الفارس</div><h2>تفاصيل تُرى.<br><em>وجودة تُلمس.</em></h2>
+      <div class="promise-grid"><div><b>01</b><h3>وضوح من البداية</h3><p>مواصفات ومقاسات وتكلفة يتم تأكيدها قبل التصنيع.</p></div><div><b>02</b><h3>عناية في كل مرحلة</h3><p>مراجعة جودة وتجهيز مناسب قبل خروج الطلب.</p></div><div><b>03</b><h3>تواصل مستمر</h3><p>متابعة معك من الاستفسار وحتى تسليم الشحنة.</p></div></div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-top"><div><a class="brand footer-brand" href="#top"><span class="brand-symbol">𓃗</span><span><b>الفارس العربي</b><small>AL FARIS AL ARABI</small></span></a><h2>دع التفاصيل<br><em>تتحدث عنك.</em></h2></div><div class="footer-contact"><span>للطلب والاستفسار</span><a href="https://wa.me/201000000000" target="_blank" rel="noopener">تواصل عبر واتساب ↗</a><a href="mailto:hello@example.com">hello@example.com</a><small>استبدل بيانات التواصل التجريبية ببيانات النشاط قبل النشر.</small></div></div>
+    <div class="footer-bottom"><span>© 2026 الفارس العربي. جميع الحقوق محفوظة.</span><a href="#top">العودة للأعلى ↑</a><span>صُنع بعناية في مصر</span></div>
+  </footer>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
